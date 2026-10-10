@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 
+
 using namespace std;
 
 string defangIPaddr(const string& address) {
@@ -115,24 +116,23 @@ int maxScoreWords(const vector<string>& words,
 
 
 int main() {
-    setlocale(LC_ALL, "Russian");
 
-    // ---------------- Блок 1, задание 2 ----------------
-    cout << "=== Блок 1, задание 2 ===" << endl;
+
+    cout << "Блок 1, задание 2" << endl;
     string ip;
     cout << "Введите IPv4-адрес: ";
     getline(cin, ip);
 
     cout << "Результат: " << defangIPaddr(ip) << endl << endl;
 
-    cout << "=== Блок 2, задание 1 ===" << endl;
+    cout << "Блок 2, задание 1" << endl;
     string sentence;
     cout << "Введите строку для проверки на палиндром: ";
     getline(cin, sentence);
 
     cout << "Результат: " << (isPalindrome(sentence) ? "true" : "false") << endl << endl;
 
-    cout << "=== Блок 3, задание 1 ===" << endl;
+    cout << "Блок 3, задание 1" << endl;
 
     vector<string> words = {"dog", "cat", "dad", "good"};
     vector<char> letters = {'a', 'a', 'c', 'd', 'd', 'd', 'g', 'o', 'o'};
